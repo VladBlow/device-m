@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Device</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header-main">
-    <div class="index-logo">
-      <img src="#" width="164" height="36" alt="Device">
-    </div>
+    <h1 class="header-title">Device</h1> 
     <section class="header-top">
       <div class="header-search">
+        <img src="img/search.png">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <input type="text" name="search" placeholder="Поиск по сайту">
           <button class="btn" type="submit">Найти</button>
@@ -20,16 +20,19 @@
       </div>
       <ul class="header-top-menu">
         <li>
-          <a href="#">Валентин Петухов</a>
+          <a href="#">
+            <img src="img/user.png">Валентин Петухов</a>
         </li>
         <li>
           <a href="#">Выйти</a>
         </li>
         <li>
-          <a href="#">Сравнить</a>
+          <a href="#">
+            <img src="img/compare.png">Сравнить</a>
         </li>
         <li>
-          <a href="#">Корзина</a>
+          <a href="#">
+            <img src="img/cart.png">Корзина</a>
         </li>
       </ul>
     </section>
@@ -75,7 +78,7 @@
 
   <main class="container">
     <section>
-      <h1>Моноподы для селфи</h1>
+      <h2>Моноподы для селфи</h2>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a href="#">Главная</a> 
@@ -90,7 +93,7 @@
     </section>
     <section class="sidebar">
       <div class="sidebar-header">
-        <h2>Фильтр:</h2>
+        <span class="sidebar-filter-title">Фильтр:</span>
       </div>
       <div class="sidebar-inner">
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -125,7 +128,7 @@
 
     <section class="catalog">
       <div class="catalog-header">
-        <h2>Сортировка:</h2>
+        <span class="sidebar-filter-title">Сортировка:</span>
         <ul class="catalog-sort">
           <li class="checked">
             <a href="#">По цене</a> 
@@ -147,28 +150,28 @@
 
       <div class="catalog-body">
         <a class="catalog-item" href="#">  
-          <img src="#" width="360" height="380">
+          <img src="img/item-1.jpg" width="360" height="380">
           <div class="catalog-item-text">
             <span class="catalog-item-descr">Любительская селфи-палка</span>
             <span class="catalog-item-cost">500 руб.</span>
           </div>
         </a>
         <a class="catalog-item" href="#">  
-          <img src="#" width="360" height="380">
+          <img src="img/item-2.jpg" width="360" height="380">
           <div class="catalog-item-text">
             <span class="catalog-item-descr">Профессиональная селфи-палка</span>
             <span class="catalog-item-cost">1 500 руб.</span>
           </div>
         </a>
         <a class="catalog-item" href="#">  
-          <img src="#" width="360" height="380">
+          <img src="img/item-3.jpg" width="360" height="380">
           <div class="catalog-item-text">
             <span class="catalog-item-descr">Непотопляемая селфи-палка</span>
             <span class="catalog-item-cost">2 500 руб.</span>
           </div>
         </a>
         <a class="catalog-item" href="#">  
-          <img src="#" width="360" height="380">
+          <img src="img/item-4.jpg" width="360" height="380">
           <div class="catalog-item-text">
             <span class="catalog-item-descr">Селфи-палка "Следуй за мной"</span>
             <span class="catalog-item-cost">4 900 руб.</span>
@@ -190,16 +193,19 @@
 
     <footer class="footer-main">
       <section class="footer-top">
-        <img class="footer-logo" src="#" width="136" height="36" alt="Device">
+        <h1 class="footer-title">Device</h1>
         <ul class="footer-top-menu">
           <li>
-            <a href="#">Войти</a>
+            <a href="#">
+              <img src="img/footer-user.png">Войти</a>
           </li>
           <li>
-            <a href="#">Сравнить</a>
+            <a href="#">
+              <img src="img/footer-compare.png">Сравнить</a>
           </li>
           <li>
-            <a href="#">Корзина</a>
+            <a href="#">
+              <img src="img/footer-cart.png">Корзина</a>
           </li>
         </ul>
       </section>
@@ -220,10 +226,18 @@
       </section>
       <section class="footer-social">
         <span class="strange-stick yellow"></span>
-        <a href="#" class="social-btn social-btn-fb"></a>
-        <a href="#" class="social-btn social-btn-inst"></a>
-        <a href="#" class="social-btn social-btn-tw"></a>
-        <a href="https://htmlacademy.ru" class="htmlacademy-btn"></a>
+        <a href="#" class="social-btn social-btn-fb">
+          <img src="img/social-fb.png">
+        </a>
+        <a href="#" class="social-btn social-btn-inst">
+          <img src="img/social-insta.png">
+        </a>
+        <a href="#" class="social-btn social-btn-tw">
+          <img src="img/social-twi.png">
+        </a>
+        <a href="https://htmlacademy.ru" class="htmlacademy-btn">
+          <img src="img/footer-logo-html.png">
+        </a>
       </section>
     </footer>
    

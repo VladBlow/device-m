@@ -1,0 +1,167 @@
+body {
+	font-family: OpenSans Light, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #464646;
+	letter-spacing: 10;
+}
+
+h1 {
+	font-family: Gilroy ExtraBold, Tahoma, sans-serif;
+	font-size: 48px;
+	line-height: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 10;
+}
+
+.header-title {
+	color: #000;
+}
+
+.footer-title {
+	color: #ffc600;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header-top-menu {
+	font-size: 15px;
+	font-weight: light;
+	line-height: 36px;
+	color: #000;
+}
+
+.header-bottom {
+	font-family: Gilroy ExtraBold, Tahoma, sans-serif;
+	font-size: 18px;
+	line-height: normal;
+	font-weight: bold;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 200;
+}
+
+.slide-number {
+	font-family: Gilroy ExtraBold, Tahoma, sans-serif;
+	font-size: 179.2px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 179.2px;
+	letter-spacing: 10;
+}
+
+h2 {
+	font-family: Gilroy ExtraBold, Tahoma, sans-serif;
+	font-size: 47px;
+	line-height: normal;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: 10;
+}
+
+.slide-spec-value {
+	font-family: Gilroy Light, Tahoma, sans-serif;
+	font-size: 36px;
+	line-height: normal;
+	font-weight: lighter;
+	color: #000;
+	letter-spacing: 10;
+}
+
+.slide-spec-type {
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.product-type-text {
+	font-family: Gilroy ExtraBold, Tahoma, sans-serif;
+	font-size: 18px;
+	line-height: normal;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: 10;
+}
+
+.info-text li {
+	font-family: Gilroy ExtraBold, Tahoma, sans-serif;
+	font-size: 16px;
+	line-height: normal;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: 10;
+}
+
+
+.footer-top-menu li,
+.footer-bottom span {
+	font-size: 15px;
+	font-weight: light;
+	line-height: 36px;
+	color: #fff;
+}
+
+.footer-bottom-menu {
+	font-family: Gilroy ExtraBold, Tahoma, sans-serif;
+	font-size: 18px;
+	line-height: normal;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 200;
+}
+
+/* тут начинаются стили для каталога */
+
+.breadcrumbs {
+	font-size: 14px;
+	line-height: 36px;
+	color: #464646;
+	letter-spacing: 10;
+}
+
+.sidebar-filter-title,
+.page-switcher {
+	font-family: Gilroy ExtraBold, Tahoma, sans-serif;
+	font-size: 16px;
+	line-height: normal;
+	font-weight: bold;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 200;
+}
+
+.sidebar-filter span,
+.catalog-item-descr {
+	font-family: Gilroy ExtraBold, Tahoma, sans-serif;
+	font-size: 18px;
+	line-height: normal;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: 10;
+}
+
+.catalog-sort {
+	font-family: OpenSans, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000;
+	letter-spacing: 0;
+}
+
+.sidebar-filter label {
+	font-size: 14px;
+	line-height: 40px;
+	color: #000;
+	letter-spacing: 10;
+}
+
+.catalog-item-cost {
+	font-family: Gilroy Light, Tahoma, sans-serif;
+	font-size: 16px;
+	line-height: normal;
+	color: #464646;
+	letter-spacing: 10;
+}
