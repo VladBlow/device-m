@@ -106,7 +106,7 @@ h2 {
 .footer-bottom-menu {
 	font-family: Gilroy ExtraBold, Tahoma, sans-serif;
 	font-size: 18px;
-	line-height: 36px;
+	line-height: 2;
 	font-weight: bold;
 	color: #fff;
 	text-transform: uppercase;
@@ -167,8 +167,12 @@ h2 {
 
 /* тут начинается сетка */
 
-
-h1, h2 {
+.footer-title,
+.header-title,
+.slide-title,
+.service-title,
+.info-title, 
+.contacts-title {
 	margin: 0;
 }
 
@@ -202,7 +206,7 @@ h1, h2 {
 .header-top-menu {
 	outline: 1px dashed brown;
 	min-height: 40px;
-	width: 560px;
+	width: 50%;
 	float: right;
 	text-align: left;
 	margin: 0;
@@ -245,6 +249,8 @@ h1, h2 {
 }
 
 .header-bottom-menu {
+	float: right;
+	width: 50%;
 	padding: 0;
 	margin: 0;
 }
@@ -257,16 +263,15 @@ h1, h2 {
 }
 
 .header-bottom-menu li:first-child {
-	width: 300px;
-	margin-right: 240px;
+
 }
 
 .header-bottom-menu li:nth-child(2) {
-	margin-right: 20px;
+
 }
 
 .header-bottom-menu li:nth-child(3) {
-	margin-right: 60px;
+
 }
 
 
@@ -277,16 +282,15 @@ h1, h2 {
 
 .slide-image {
 	outline: 1px dashed brown;
-	width: 560px;
+	width: 50%;
 	min-height: 500px;
-	margin-right: 40px;
 	float: left;
 }
 
 .slide-descr {
 	outline: 1px dashed brown;
 	float: right;
-	width: 560px;
+	width: 50%;
 	min-height: 500px;
 }
 
@@ -308,6 +312,7 @@ h1, h2 {
 
 .slide-spec {
 	display: inline-block;
+	vertical-align: middle;
 	outline: 1px dashed grey;
 	font-size: 12px;
 	margin-right: 20px;
@@ -357,7 +362,7 @@ h1, h2 {
 
 .services-slide {
 	outline: 1px dashed brown;
-	float: left;
+	float: right;
 	width: 760px;
 }
 
@@ -402,12 +407,11 @@ h1, h2 {
 .info-wrap, .contacts-wrap {
 	outline: 1px dashed brown;
 	min-height: 640px;
-	width: 560px;
+	width: 50%;
 }
 
 .info-wrap {
 	float: left;
-	margin-right: 40px;
 }
 
 .contacts-wrap {
@@ -466,9 +470,9 @@ h1, h2 {
 
 .footer-bottom-menu {
 	outline: 1px dashed lightblue;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 0;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0;
 }
 
 .footer-bottom-menu,
@@ -512,7 +516,7 @@ h1, h2 {
 }
 
 .social-btn:first-child {
-	margin-left: 10px;
+	margin: 0 11px;
 }
 
 .htmlacademy-btn {
@@ -526,7 +530,7 @@ h1, h2 {
 	background-color: #ffc600;
 }
 
-h2 {
+.main-title {
 	outline: 2px dashed brown;
 	margin-bottom: 30px;
 	margin-top: 40px;
@@ -536,6 +540,7 @@ h2 {
 .breadcrumbs-item {
 	outline: 2px dashed brown;
 	display: inline-block;
+	vertical-align: middle;
 	margin-right: 40px;
 	margin-bottom: 30px;
 }
@@ -560,6 +565,7 @@ h2 {
 .sidebar-filter-title {
 	outline: 2px dashed brown;
 	display: inline-block;
+	vertical-align: middle;
 	padding: 30px 0;
 	margin-bottom: 70px;
 }
@@ -573,10 +579,12 @@ h2 {
 
 .catalog-sort {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .catalog-sort li {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .page-switcher {
