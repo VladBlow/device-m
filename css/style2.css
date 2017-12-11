@@ -1,0 +1,274 @@
+body {
+	font-family: OpenSans, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #464646;
+	letter-spacing: 10;
+}
+
+h1 {
+	font-family: Gilroy, Tahoma, sans-serif;
+	font-size: 48px;
+	line-height: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 10;
+}
+
+.header-title {
+	color: #000;
+}
+
+.footer-title {
+	color: #ffc600;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header-top-menu {
+	font-size: 15px;
+	font-weight: light;
+	line-height: 36px;
+	color: #000;
+}
+
+.header-bottom {
+	font-family: Gilroy, Tahoma, sans-serif;
+	font-size: 18px;
+	line-height: normal;
+	font-weight: bold;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 200;
+}
+
+.slide-number {
+	font-family: Gilroy, Tahoma, sans-serif;
+	font-size: 179.2px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 179.2px;
+	letter-spacing: 10;
+}
+
+h2 {
+	font-family: Gilroy, Tahoma, sans-serif;
+	font-size: 47px;
+	line-height: normal;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: 10;
+}
+
+.slide-spec-value {
+	font-family: Gilroy, Tahoma, sans-serif;
+	font-size: 36px;
+	line-height: normal;
+	font-weight: lighter;
+	color: #000;
+	letter-spacing: 10;
+}
+
+.slide-spec-type {
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.product-type-text {
+	font-family: Gilroy, Tahoma, sans-serif;
+	font-size: 18px;
+	line-height: normal;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: 10;
+}
+
+.info-text li {
+	font-family: Gilroy, Tahoma, sans-serif;
+	font-size: 16px;
+	line-height: normal;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: 10;
+}
+
+
+.footer-top-menu li,
+.footer-bottom span {
+	font-size: 15px;
+	font-weight: light;
+	line-height: 2; 
+	color: #fff;
+}
+
+.footer-bottom-menu {
+	font-family: Gilroy, Tahoma, sans-serif;
+	font-size: 18px;
+	line-height: 2;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 200;
+}
+
+/* тут начинаются стили для каталога */
+
+.breadcrumbs {
+	font-size: 14px;
+	line-height: 36px;
+	color: #464646;
+	letter-spacing: 10;
+}
+
+.sidebar-filter-title,
+.page-switcher {
+	font-family: Gilroy, Tahoma, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 200;
+}
+
+.sidebar-filter span,
+.catalog-item-descr {
+	font-family: Gilroy, Tahoma, sans-serif;
+	font-size: 18px;
+	line-height: normal;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: 10;
+}
+
+.catalog-sort {
+	font-family: OpenSans, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000;
+	letter-spacing: 0;
+}
+
+.sidebar-filter label {
+	font-size: 14px;
+	line-height: 40px;
+	color: #000;
+	letter-spacing: 10;
+}
+
+.catalog-item-cost {
+	font-family: Gilroy, Tahoma, sans-serif;
+	font-size: 16px;
+	line-height: normal;
+	color: #464646;
+	letter-spacing: 10;
+}
+
+/* тут начинается сетка */
+
+
+
+.header-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #f7e296;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+	outline: 3px solid red;
+}
+
+.header-top {
+	outline: 1px dashed brown;
+	min-height: 70px;
+	display: flex;
+}
+
+.header-bottom {
+	outline: 1px dashed brown;
+	display: flex;
+}
+
+.slide {
+	outline: 1px dashed brown;
+	display: flex;
+	justify-content: space-between;
+}
+
+.slide-image,
+.slide-descr {
+	outline: 1px dashed brown;
+	width: 50%;
+}
+
+.slide-image {
+	padding-left: 20px;
+}
+
+.slide-spec-wrapper {
+	outline: 1px dashed brown;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.slide-spec {
+	outline: 1px dashed purple;
+	margin-right: 60px;
+}
+
+.menu {
+	outline: 1px dashed brown;
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-type {
+	outline: 1px dashed brown;
+	width: 160px;
+}
+
+.image-holder {
+	outline: 1px dashed brown;
+	display: flex;
+	background-color: #f7e296;
+	width: 160px;
+	height: 160px;
+}
+
+.image-holder img {
+	margin: auto;
+}
+
+.partners {
+	display: flex;
+	justify-content: space-between;
+}
+
+.partners-logo {
+	outline: 1px dashed brown;
+	opacity: 0.2;
+}
+
+.info-contacts-wrap {
+	outline: 1px dashed brown;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info,
+.contacts {
+	outline: 1px dashed purple;
+	width: 50%;
+}
+
+
+
+
+.hidden {
+	display: none;
+}

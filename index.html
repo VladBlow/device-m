@@ -4,84 +4,84 @@
 <head>
   <meta charset="utf-8">
   <title>Device</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
   <div class="container">
     <header class="header-main">
       <h1 class="header-title">Device</h1> 
-      <section class="header-top clearfix">
-        <div class="header-search">
-          <img src="img/search.png">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" name="search" placeholder="Поиск по сайту">
-            <button class="btn" type="submit">Найти</button>
-          </form>
-        </div>
-        <ul class="header-top-menu">
-          <li class="header-menu-login">
-            <a href="#">
-              <img src="img/user.png">Войти</a>
-          </li>
-          <li class="header-menu-compare">
-            <a href="#">
-              <img src="img/compare.png">Сравнить</a>
-          </li>
-          <li class="header-menu-cart">
-            <a href="#">
-              <img src="img/cart.png">Корзина</a>
-          </li>
-        </ul>
-      </section>
-      <section class="header-bottom">
-        <a class="header-catalog" href="#">Каталог товаров</a>
-        <ul class="header-bottom-menu">
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </section>
-      <section class="header-hidden-menu hidden">
-        <ul class="catalog-menu">
-          <li>
-            <a href="#">Виртуальная реальность</a>
-          </li>
-          <li>
-            <a href="#">Моноподы для селфи</a>
-          </li>
-          <li>
-            <a href="#">Экшн-камеры</a>
-          </li>
-          <li>
-            <a href="#">Фитнес-браслеты</a>
-          </li>
-          <li>
-            <a href="#">Умные часы</a>
-          </li>
-          <li>
-            <a href="#">Квадрокоптеры</a>
-          </li>
-        </ul>
+      <section class="header-wrap">
+        <section class="header-top">
+          <div class="header-search">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="text" name="search" placeholder="Поиск по сайту">
+              <button class="btn" type="submit">Найти</button>
+            </form>
+          </div>
+          <ul class="header-top-menu">
+            <li class="header-menu-login">
+              <a href="#">Войти</a>
+            </li>
+            <li class="header-menu-compare">
+              <a href="#">Сравнить</a>
+            </li>
+            <li class="header-menu-cart">
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </section>
+        <section class="header-bottom">
+          <a class="header-catalog" href="#">Каталог товаров</a>
+          <ul class="header-bottom-menu">
+            <li class="header-bottom-delivery">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="header-bottom-guarantee">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="header-bottom-contacts">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </section>
+        <section class="header-hidden-menu hidden">
+          <ul class="catalog-menu">
+            <li>
+              <a href="#">Виртуальная реальность</a>
+            </li>
+            <li>
+              <a href="#">Моноподы для селфи</a>
+            </li>
+            <li>
+              <a href="#">Экшн-камеры</a>
+            </li>
+            <li>
+              <a href="#">Фитнес-браслеты</a>
+            </li>
+            <li>
+              <a href="#">Умные часы</a>
+            </li>
+            <li>
+              <a href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </section>
       </section>
     </header>
   </div>
   
   <main>
     <article class="slider container">
-      <div class="slider-switchers">
+      <div class="slider-switchers hidden">
         <input type="radio" name="slider-switcher" value="1" checked>
         <input type="radio" name="slider-switcher" value="2">
         <input type="radio" name="slider-switcher" value="3">
       </div>
 
-      <section class="slide clearfix">
+      <section class="slide">
         
         <div class="slide-image">
           <img src="img/slider-1.png" width="384" height="486" alt="Монопод для селфи">
@@ -113,7 +113,7 @@
         </div>
       </section>
 
-      <section class="slide clearfix hidden">
+      <section class="slide hidden">
         <div class="slide-image">
           <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
         </div>
@@ -134,7 +134,7 @@
         </div>
       </section>
 
-      <section class="slide clearfix hidden">
+      <section class="slide hidden">
         
         <div class="slide-image">
           <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
@@ -200,7 +200,7 @@
     </section>
 
     <article class="services">
-      <div class="container clearfix">
+      <div class="container services-wrap">
         <div class="services-tabs">
           <input type="radio" name="services-slider-switcher" value="delivery" id="delivery" checked>
           <label for="delivery">Доставка</label>
@@ -209,7 +209,7 @@
           <input type="radio" name="services-slider-switcher" value="credit" id="credit">
           <label for="credit">Кредит</label>
         </div>
-        <section class="services-slide clearfix">
+        <section class="services-slide">
           <div class="services-slide-text">
             <h2 class="service-title">Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему
@@ -221,6 +221,7 @@
             <img src="img/delivery.png" width="136" height="164">
           </div>
         </section>
+
         <section class="services-slide hidden">
           <div class="services-slide-text">
             <h2 class="service-title">Гарантия</h2>
@@ -261,9 +262,10 @@
         <img src="img/logo-4.png" width="260" height="100">
       </a>
     </section>
-    <section class="info-contacts-wrap clearfix container">
-      <div class="info-wrap">
-        <section class="info">
+
+    <section class="info-contacts-wrap container">
+
+        <div class="info">
           <div class="info-text">
             <span class="strange-stick black"></span>
             <h2 class="info-title">О нас</h2>
@@ -278,9 +280,9 @@
             </ul>
             <button class="main-btn" type="button">Подробнее о нас</button>
           </div>
-        </section>
-      </div>
-      <div class="contacts-wrap">
+        </div>
+
+
         <section class="contacts">
           <div class="contacts-text">
             <span class="strange-stick black"></span>
@@ -293,34 +295,30 @@
             <button class="main-btn" type="button">Напишите нам</button>
           </div>
         </section>
-      </div>
+
     </section>
   </main>
 
     <footer class="footer-main">
       <div class="container">
-        <section class="footer-top clearfix">
+        <section class="footer-top">
           <h1 class="footer-title">Device</h1>
           <ul class="footer-top-menu">
             <li>
-              <a href="#">
-                <img src="img/footer-user.png">Войти</a>
+              <a href="#">Войти</a>
             </li>
             <li>
-              <a href="#">
-                <img src="img/footer-compare.png">Сравнить</a>
+              <a href="#">Сравнить</a>
             </li>
             <li>
-              <a href="#">
-                <img src="img/footer-cart.png">Корзина</a>
+              <a href="#">Корзина</a>
             </li>
           </ul>
         </section>
-        <section class="footer-bottom clearfix">
+
+        <section class="footer-bottom">
           <span class="footer-addr">г. Москва, ул. Строителей, 15</span>
-         
-          <span class="footer-tel">Тел.: +7 (495) 495-95-95</span>
-         <ul class="footer-bottom-menu">
+          <ul class="footer-bottom-menu">
             <li>
               <a href="#">Доставка</a>
             </li>
@@ -331,12 +329,10 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
+          <span class="footer-tel">Тел.: +7 (495) 495-95-95</span> 
         </section>
-        <section class="footer-social clearfix">
+        <section class="footer-social">
           <span class="strange-stick yellow"></span>
-          <a href="https://htmlacademy.ru" class="htmlacademy-btn">
-              <img src="img/footer-logo-html.png">
-            </a>
           <div class="social">
             <a href="#" class="social-btn social-btn-fb">
               <img src="img/social-fb.png">
@@ -348,6 +344,9 @@
               <img src="img/social-twi.png">
             </a>
           </div>
+          <a href="https://htmlacademy.ru" class="htmlacademy-btn">
+              <img src="img/footer-logo-html.png">
+          </a>
         </section>
       </div>
     </footer>
