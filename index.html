@@ -12,76 +12,87 @@
 <body>
   <div class="container">
     <header class="header-main">
-      <h1 class="header-title">Device</h1> 
+      <a class="header-title" href="#">Device</a> 
       <section class="header-wrap">
         <section class="header-top">
           <div class="header-search">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <input type="text" name="search" placeholder="Поиск по сайту">
-              <button class="btn" type="submit">Найти</button>
+              <input class="input-search" type="text" name="search" placeholder="Поиск по сайту">
+              <button class="search-btn" type="submit">Найти</button>
             </form>
           </div>
           <ul class="header-top-menu">
-            <li class="header-menu-login">
+            <li class="header-login">
               <a href="#">Войти</a>
             </li>
-            <li class="header-menu-compare">
+            <li class="header-compare">
               <a href="#">Сравнить</a>
             </li>
-            <li class="header-menu-cart">
+            <li class="header-cart">
               <a href="#">Корзина</a>
             </li>
           </ul>
         </section>
-        <section class="header-bottom">
-          <a class="header-catalog" href="#">Каталог товаров</a>
-          <ul class="header-bottom-menu">
-            <li class="header-bottom-delivery">
-              <a href="#">Доставка</a>
-            </li>
-            <li class="header-bottom-guarantee">
-              <a href="#">Гарантия</a>
-            </li>
-            <li class="header-bottom-contacts">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </section>
-        <section class="header-hidden-menu hidden">
-          <ul class="catalog-menu">
-            <li>
-              <a href="#">Виртуальная реальность</a>
-            </li>
-            <li>
-              <a href="#">Моноподы для селфи</a>
-            </li>
-            <li>
-              <a href="#">Экшн-камеры</a>
-            </li>
-            <li>
-              <a href="#">Фитнес-браслеты</a>
-            </li>
-            <li>
-              <a href="#">Умные часы</a>
-            </li>
-            <li>
-              <a href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </section>
-      </section>
+
+        <ul class="header-bottom-menu">
+          <li class="header-catalog">
+            <a href="#">Каталог товаров</a>
+            <div class="catalog-menu">
+              <ul>
+                <li>
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="#">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Фитнесc браслеты</a>
+                </li>
+                <li>
+                  <a href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-bottom-delivery">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="header-bottom-guarantee">
+            <a href="#">Гарантия</a>
+          </li>
+          <li class="header-bottom-contacts">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+
     </header>
   </div>
   
   <main>
     <article class="slider container">
-      <div class="slider-switchers hidden">
-        <input type="radio" name="slider-switcher" value="1" checked>
-        <input type="radio" name="slider-switcher" value="2">
-        <input type="radio" name="slider-switcher" value="3">
+
+
+      <input type="radio" name="slider-switcher" value="1" id="slide-1" checked>
+      <input type="radio" name="slider-switcher" value="2" id="slide-2">
+      <input type="radio" name="slider-switcher" value="3" id="slide-3">
+
+      <div class="slider-switchers">
+        <label for="slide-1"></label>
+        <label for="slide-2"></label>
+        <label for="slide-3"></label>
       </div>
 
-      <section class="slide">
+      <section class="slide slide-1">
         
         <div class="slide-image">
           <img src="img/slider-1.png" width="384" height="486" alt="Монопод для селфи">
@@ -89,7 +100,7 @@
 
         <div class="slide-descr">
           <span class="strange-stick white"></span>
-          <span class="slide-number hidden">01</span>
+          <span class="slide-number">01</span>
           <div class="slide-text">
             <h2 class="slide-title">Делай селфи, <br>как Бен Стиллер!</h2>
             <p>Самая длинная палка для селфи доступна в нашем магазине.
@@ -113,7 +124,7 @@
         </div>
       </section>
 
-      <section class="slide hidden">
+      <section class="slide slide-2">
         <div class="slide-image">
           <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
         </div>
@@ -122,22 +133,24 @@
           <span class="strange-stick white"></span>
           <span class="slide-number">02</span>
           <div class="slide-text">
-            <h2 class="slide-title">Худеем правильно!</h2>
+            <h2 class="slide-title">Худеем <br> правильно!</h2>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
               <br> не пропускать занятия и соблюдать диету.</p>
           </div>
           <button class="main-btn" type="button">Подробнее</button>
-          <div class="slide-spec">
-            <span class="slide-spec-value">48 часов</span>
-            <span class="slide-spec-type">Без подзарядки</span>
+          <div class="slide-spec-wrapper">
+            <div class="slide-spec">
+              <span class="slide-spec-value">48 часов</span><br>
+              <span class="slide-spec-type">Без подзарядки</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="slide hidden">
+      <section class="slide slide-3">
         
         <div class="slide-image">
-          <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+          <img src="img/slider-3.png" width="474" height="300.4" alt="Квадрокоптер">
         </div>
 
         <div class="slide-descr">
@@ -149,13 +162,15 @@
               <br> мощным лазером, замаскированным под стандартную камеру.</p>
           </div>
           <button class="main-btn" type="button">Подробнее</button>
-          <div class="slide-spec">
-            <span class="slide-spec-value">800 м</span>
-            <span class="slide-spec-type">Дальность полета</span>
-          </div>
-          <div class="slide-spec">
-            <span class="slide-spec-value">50 м</span>
-            <span class="slide-spec-type">Радиус поражения</span>
+          <div class="slide-spec-wrapper">
+            <div class="slide-spec">
+              <span class="slide-spec-value">800 м</span><br>
+              <span class="slide-spec-type">Дальность полета</span>
+            </div>
+            <div class="slide-spec">
+              <span class="slide-spec-value">50 м</span><br>
+              <span class="slide-spec-type">Радиус поражения</span>
+            </div>
           </div>
         </div>
       </section>
@@ -183,7 +198,7 @@
         <div class="image-holder">
           <img src="img/popular-4.png" width="107" height="65" alt="Фитнес-браслеты">
         </div>
-        <span class="product-type-text">Фитнес-браслеты</span>
+        <span class="product-type-text">Фитнесc браслеты</span>
       </a>
       <a href="#" class="product-type">
         <div class="image-holder">
@@ -201,15 +216,17 @@
 
     <article class="services">
       <div class="container services-wrap">
+        <input type="radio" name="services-slider-switcher" value="delivery" id="delivery" checked>
+        <input type="radio" name="services-slider-switcher" value="guarantee" id="guarantee">
+        <input type="radio" name="services-slider-switcher" value="credit" id="credit">
+
         <div class="services-tabs">
-          <input type="radio" name="services-slider-switcher" value="delivery" id="delivery" checked>
-          <label for="delivery">Доставка</label>
-          <input type="radio" name="services-slider-switcher" value="guarantee" id="guarantee">
-          <label for="guarantee">Гарантия</label>
-          <input type="radio" name="services-slider-switcher" value="credit" id="credit">
-          <label for="credit">Кредит</label>
+          <label class="main-btn services-btn" for="delivery">Доставка</label>
+          <label class="main-btn services-btn" for="guarantee">Гарантия</label>
+          <label class="main-btn services-btn" for="credit">Кредит</label>
         </div>
-        <section class="services-slide">
+
+        <section class="services-slide services-slide-1">
           <div class="services-slide-text">
             <h2 class="service-title">Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему
@@ -222,7 +239,7 @@
           </div>
         </section>
 
-        <section class="services-slide hidden">
+        <section class="services-slide services-slide-2">
           <div class="services-slide-text">
             <h2 class="service-title">Гарантия</h2>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит
@@ -234,7 +251,7 @@
             <img src="img/guarantee.png" width="171" height="194">
           </div>
         </section>
-        <section class="services-slide hidden">
+        <section class="services-slide services-slide-3">
           <div class="services-slide-text">
             <h2 class="service-title">Кредит</h2>
             <p>Залезть в долговую яму стало проще! Кредитные
@@ -250,16 +267,16 @@
     </article>
     <section class="partners container">
       <a href="#" class="partners-logo">
-        <img src="img/logo-1.png" width="260" height="100">
+        <img src="img/logo-1.jpg" width="260" height="100">
       </a>
       <a href="#" class="partners-logo">
-        <img src="img/logo-2.png" width="260" height="100">
+        <img src="img/logo-2.jpg" width="260" height="100">
       </a>
       <a href="#" class="partners-logo">
-        <img src="img/logo-3.png" width="260" height="100">
+        <img src="img/logo-3.jpg" width="260" height="100">
       </a>
       <a href="#" class="partners-logo">
-        <img src="img/logo-4.png" width="260" height="100">
+        <img src="img/logo-4.jpg" width="260" height="100">
       </a>
     </section>
 
@@ -292,7 +309,7 @@
             <div class="map-holder">
               <img src="img/map.jpg" width="560" height="222">
             </div>
-            <button class="main-btn" type="button">Напишите нам</button>
+            <button class="main-btn write-us-btn" type="button">Напишите нам</button>
           </div>
         </section>
 
@@ -302,22 +319,22 @@
     <footer class="footer-main">
       <div class="container">
         <section class="footer-top">
-          <h1 class="footer-title">Device</h1>
+          <a class="footer-title" href="#">Device</a> 
           <ul class="footer-top-menu">
-            <li>
+            <li class="footer-login">
               <a href="#">Войти</a>
             </li>
-            <li>
+            <li class="footer-compare">
               <a href="#">Сравнить</a>
             </li>
-            <li>
+            <li class="footer-cart">
               <a href="#">Корзина</a>
             </li>
           </ul>
         </section>
 
         <section class="footer-bottom">
-          <span class="footer-addr">г. Москва, ул. Строителей, 15</span>
+          <span class="footer-address">г. Москва, ул. Строителей, 15</span>
           <ul class="footer-bottom-menu">
             <li>
               <a href="#">Доставка</a>
@@ -334,19 +351,11 @@
         <section class="footer-social">
           <span class="strange-stick yellow"></span>
           <div class="social">
-            <a href="#" class="social-btn social-btn-fb">
-              <img src="img/social-fb.png">
-            </a>
-            <a href="#" class="social-btn social-btn-inst">
-              <img src="img/social-inst.png">
-            </a>
-            <a href="#" class="social-btn social-btn-tw">
-              <img src="img/social-twi.png">
-            </a>
+            <a href="#" class="social-btn social-btn-fb"></a>
+            <a href="#" class="social-btn social-btn-inst"></a>
+            <a href="#" class="social-btn social-btn-tw"></a>
           </div>
-          <a href="https://htmlacademy.ru" class="htmlacademy-btn">
-              <img src="img/footer-logo-html.png">
-          </a>
+          <a href="https://htmlacademy.ru" class="htmlacademy-btn"></a>
         </section>
       </div>
     </footer>
@@ -354,18 +363,32 @@
     <div class="popup-map hidden">
       <img src="#" width="960" height="559" alt="Карта">
     </div>
-    <div class="hidden">
-      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Ваше имя</label>
-        <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="name">
-        <label for="email">Ваш e-mail</label>
-        <input type="text" name="email" placeholder="Для отправки ответа" id="email">
-        <label for="message">Текст письма</label>
-        <textarea name="message" placeholder="В свободной форме" id="message"></textarea>
-        <button class="main-btn" type="submit"></button>
+
+
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-name">
+          <label for="name">Ваше имя:</label>
+          <input class="icon-name" type="text" name="name" placeholder="Представьтесь, пожалуйста" id="name">
+        </div>
+        <div class="form-mail">
+          <label for="email">Ваш e-mail:</label>
+          <input class="icon-mail" type="text" name="email" placeholder="Для отправки ответа" id="email">
+        </div>
+        <div class="form-message">
+          <label for="message">Текст письма:</label>
+          <textarea class="icon-message" name="message" placeholder="В свободной форме" id="message"></textarea>
+        </div>
+        <button class="main-btn" type="submit">Отправить</button>
       </form>
     </div>
+
+
   </main>
+
+  
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

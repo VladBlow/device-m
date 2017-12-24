@@ -12,67 +12,72 @@
 <body>
   <div class="container">
     <header class="header-main">
-      <h1 class="header-title">Device</h1> 
-      <section class="header-wrap  header-wrap-catalog">
+      <a class="header-title" href="#">Device</a> 
+      <section class="header-wrap header-wrap-catalog">
         <section class="header-top">
           <div class="header-search">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <input type="text" name="search" placeholder="Поиск по сайту">
-              <button class="btn" type="submit">Найти</button>
+              <input class="input-search" type="text" name="search" placeholder="Поиск по сайту">
+              <button class="search-btn" type="submit">Найти</button>
             </form>
           </div>
           <ul class="header-top-menu">
-            <li class="header-menu-login">
+            <li class="header-login">
               <a href="#">Валентин Петухов</a>
             </li>
-            <li class="">
+            <li>
               <a href="#">Выйти</a>
             </li>
-            <li class="header-menu-compare">
+            <li class="header-compare">
               <a href="#">Сравнить</a>
             </li>
-            <li class="header-menu-cart">
+            <li class="header-cart">
               <a href="#">Корзина</a>
             </li>
           </ul>
         </section>
-        <section class="header-bottom">
-          <a class="header-catalog" href="#">Каталог товаров</a>
-          <ul class="header-bottom-menu">
-            <li class="header-bottom-delivery">
-              <a href="#">Доставка</a>
-            </li>
-            <li class="header-bottom-guarantee">
-              <a href="#">Гарантия</a>
-            </li>
-            <li class="header-bottom-contacts">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </section>
-        <section class="header-hidden-menu hidden">
-          <ul class="catalog-menu">
-            <li>
-              <a href="#">Виртуальная реальность</a>
-            </li>
-            <li>
-              <a href="#">Моноподы для селфи</a>
-            </li>
-            <li>
-              <a href="#">Экшн-камеры</a>
-            </li>
-            <li>
-              <a href="#">Фитнес-браслеты</a>
-            </li>
-            <li>
-              <a href="#">Умные часы</a>
-            </li>
-            <li>
-              <a href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </section>
-      </section>
+
+        <ul class="header-bottom-menu">
+          <li class="header-catalog">
+            <a href="#">Каталог товаров</a>
+            <div class="catalog-menu">
+              <ul>
+                <li>
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="#">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Фитнесc браслеты</a>
+                </li>
+                <li>
+                  <a href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-bottom-delivery">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="header-bottom-guarantee">
+            <a href="#">Гарантия</a>
+          </li>
+          <li class="header-bottom-contacts">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+
     </header>
   </div>
 
@@ -123,9 +128,23 @@
             <form class="sidebar-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="sidebar-filter">
                 <span>Стоимость</span>
-                <input type="?" name="amount">
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div style="width: 60%" class="bar"></div>
+                      </div>
+                      <div class="toggle min-toggle"></div>
+                      <div class="toggle max-toggle"></div>
+                    </div>
+                    <div class="price-controls">
+                      от <input class="min-price" type="text" value="0">
+                      до <input class="max-price" type="text" value="15 000">
+                    </div>
+                  </div>
+                
+
               </div>
-              <div class="sidebar-filter">
+              <div class="sidebar-filter filter-color">
                 <span>Цвет</span>
                 <div>
                   <input type="checkbox" name="black" id="black" checked>
@@ -148,10 +167,10 @@
                   <label for="pink">Розовый</label>
                 </div>
               </div>
-              <div class="sidebar-filter">
+              <div class="sidebar-filter filter-bt">
                 <span>Bluetooth</span>
                 <div>
-                  <input type="radio" name="bluetooth" value="yes" id="yes">
+                  <input type="radio" name="bluetooth" value="yes" id="yes" checked>
                   <label for="yes">Есть</label>
                 </div>
                 <div>
@@ -198,9 +217,9 @@
             <div class="catalog-footer">
               <a class="catalog-page" href="#">Назад</a> 
               <ul class="page-switcher">
-                <li><button class="btn page" type="button">1</button></li>
-                <li><button class="btn page" type="button">2</button></li>
-                <li><button class="btn page" type="button">3</button></li>
+                <li><button class="btn-page btn-page-active" type="button">1</button></li>
+                <li><button class="btn-page" type="button">2</button></li>
+                <li><button class="btn-page" type="button">3</button></li>
               </ul>
               <a class="catalog-page" href="#">Вперед</a>
             </div>
@@ -215,22 +234,22 @@
     <footer class="footer-main">
       <div class="container">
         <section class="footer-top">
-          <h1 class="footer-title">Device</h1>
+          <a class="footer-title" href="#">Device</a> 
           <ul class="footer-top-menu">
-            <li>
+            <li class="footer-login">
               <a href="#">Войти</a>
             </li>
-            <li>
+            <li class="footer-compare">
               <a href="#">Сравнить</a>
             </li>
-            <li>
+            <li class="footer-cart">
               <a href="#">Корзина</a>
             </li>
           </ul>
         </section>
 
         <section class="footer-bottom">
-          <span class="footer-addr">г. Москва, ул. Строителей, 15</span>
+          <span class="footer-address">г. Москва, ул. Строителей, 15</span>
           <ul class="footer-bottom-menu">
             <li>
               <a href="#">Доставка</a>
@@ -247,19 +266,11 @@
         <section class="footer-social">
           <span class="strange-stick yellow"></span>
           <div class="social">
-            <a href="#" class="social-btn social-btn-fb">
-              <img src="img/social-fb.png">
-            </a>
-            <a href="#" class="social-btn social-btn-inst">
-              <img src="img/social-inst.png">
-            </a>
-            <a href="#" class="social-btn social-btn-tw">
-              <img src="img/social-twi.png">
-            </a>
+            <a href="#" class="social-btn social-btn-fb"></a>
+            <a href="#" class="social-btn social-btn-inst"></a>
+            <a href="#" class="social-btn social-btn-tw"></a>
           </div>
-          <a href="https://htmlacademy.ru" class="htmlacademy-btn">
-              <img src="img/footer-logo-html.png">
-          </a>
+          <a href="https://htmlacademy.ru" class="htmlacademy-btn"></a>
         </section>
       </div>
     </footer>
