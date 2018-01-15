@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Device</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             <li class="header-login">
               <a href="#">Валентин Петухов</a>
             </li>
-            <li>
+            <li class="header-logout">
               <a href="#">Выйти</a>
             </li>
             <li class="header-compare">
@@ -53,7 +53,7 @@
                 </ul>
                 <ul>
                   <li>
-                    <a href="#">Фитнесc браслеты</a>
+                    <a href="#">Фитнес-браслеты</a>
                   </li>
                   <li>
                     <a href="#">Умные часы</a>
@@ -95,7 +95,7 @@
           </li>
           <span>&#8989;</span>
           <li class="breadcrumbs-item">
-            <a href="#">Моноподы для селфи</a>
+            <a class="active" href="#">Моноподы для селфи</a>
           </li>
         </ul>
       </nav>
@@ -110,11 +110,11 @@
             <div class="main-sort">
               <span class="main-sort-header">Сортировка:</span>
               <ul class="sort-type">
-                <li><a href="#">По цене</a></li>
+                <li><a class="active" href="#">По цене</a></li>
                 <li><a href="#">По типу</a></li>
                 <li><a href="#">По популярности</a></li>
                 <li class="sort-type-up"><a href="#">&#9650;</a></li>
-                <li class="sort-type-down"><a href="#">&#9660;</a></li>
+                <li class="sort-type-down"><a class="active" href="#">&#9660;</a></li>
               </ul>
             </div>
           </section>
@@ -221,7 +221,8 @@
                     <button class="main-btn">В корзину</button>
                     <span>Добавить к сравнению</span>
                   </div>
-                  <div class="catalog-item-text">
+                  <div class="catalog-item-text is-new">
+                    <div class="item-new"><span>NEW</span></div>
                     <span class="catalog-item-descr">Селфи-палка "Следуй за мной"</span>
                     <span class="catalog-item-cost">4 900 руб.</span>
                   </div>

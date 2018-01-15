@@ -39,6 +39,9 @@ window.addEventListener("keydown", function(event) {
     if (popup.classList.contains("modal-content-show")) {
       popup.classList.remove("modal-content-show");
     }
+    if (mapPopup.classList.contains("modal-content-show")) {
+      mapPopup.classList.remove("modal-content-show");
+    }
   }
 });
 
@@ -54,12 +57,4 @@ mapOpen.addEventListener("click", function(event) {
 mapClose.addEventListener("click", function(event) {
   event.preventDefault();
   mapPopup.classList.remove("modal-content-show");
-});
-
-window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-    if (mapPopup.classList.contains("modal-content-show")) {
-      mapPopup.classList.remove("modal-content-show");
-    }
-  }
 });
